@@ -19,6 +19,8 @@ class InventoryItem(models.Model):
     last_updated = models.DateTimeField(auto_now=True)
     # how important they are
     criticality_level = models.CharField(max_length=20, blank=True, null=True)
+    #  who is updating the items?
+    updated_by = models.CharField(max_length=40, default='', blank=False, null=False)
 # see whats going on with items
     status = models.CharField(max_length=20)
 

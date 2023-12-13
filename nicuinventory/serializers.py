@@ -10,4 +10,4 @@ class InventoryItemSerializer(serializers.HyperlinkedModelSerializer):
         # the fields that should be included in the serialized output
         fields = ['id', 'item_name', 'description', 'category', 'quantity', 'unit_cost', 'total_value',
                   'supplier_name', 'supplier_contact', 'reorder_point', 'expiration_date', 'location',
-                  'last_updated', 'criticality_level', 'status']
+                  'last_updated', 'updated_by' 'criticality_level', 'status']
