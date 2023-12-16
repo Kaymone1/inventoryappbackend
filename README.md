@@ -14,12 +14,12 @@ The API is hosted at https://inventoryap-4e7068857990.herokuapp.com/ .
 
 #### 1.1 Get All Items
 
-- **Endpoint:** `/api/items/`
+- **Endpoint:** `/api/inventory/`
 - **Method:** GET
 - **Description:** Retrieve a list of all inventory items.
 - **Example Request:**
   ```http
-  GET /api/items/
+  GET /api/inventory/
 
 POST /api/items/
 Content-Type: application/json
@@ -34,7 +34,7 @@ Content-Type: application/json
   // ... other fields
 }
 
-PUT /api/items/1/
+PUT /api/inventory/1/
 Content-Type: application/json
 
 {
@@ -43,6 +43,6 @@ Content-Type: application/json
   // ... other fields to update
 }
 
-DELETE /api/items/1/
+DELETE /api/inventory/1/
 
 GET /api/dashboard/
